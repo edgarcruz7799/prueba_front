@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+  
+#Negocioh5{
+color: rgb(25,148,168);
+margin-top: -28px;
+padding-left: 87%;
+}
+
+.legendd{
+width: 100%;
+color: #4d4d4d;
+font-size: 18px;
+padding-top: 0%;
+font-weight: 100;
+border-bottom: 1px solid rgb(25,148,168);  
+}
+
+#divsup{
+margin-top: -5%;
+}
+
+.form-inline{
+	max-width: 1100px;
+}
+
+/*#notrans, #fechaini, #fechafin, #estado, #noval{
+border-right: 1px solid rgb(198, 198, 197);  
+}*/
+
+#estado{
+/*margin-top: 0.35%*/;
+}
+
+#cuerpo{
+padding-top: 3.5%;
+background-color: white;  
+padding-right: 0;
+padding-left: 2%;
+}
+
+#fechaini #fechafin #estado{
+background-color: rgb(243, 242, 242);  
+}
+
+#selectestado{
+border-color: #B5B5B5;
+color: #B5B5B5;
+background-color: white;
+height: 29px;
+border-radius: 10px;
+margin: -8px;
+min-height: 10px;
+}
+
+#estadotitle{
+font-size: 100%;
+}
+
+#fechatextini #fechatextfin{
+margin-bottom: 2%;
+height: 23px;
+border-radius: 8px;
+min-height: 100%;
+width: 100%;  
+}
+
+#tbodyid{
+font-size: 77%;
+color: rgb(181, 181, 184); 
+}
+
+#novalrec, #nocliente, #notransaccionh{
+color: rgb(114, 114, 119); 
+font-size: 35px;
+}
+
+#listobuscar{
+background-color: white;
+margin-bottom: 3%;
+
+}
+
+#divleg{
+padding-top: 3%;
+padding-left: 1%;
+margin-bottom: -4%;
+}
+
+#divtable{
+  padding-left: 3%; 
+  padding-right: 3%;
+  padding-bottom: 5%;
+}
+
+#fechafinh, #fechainih{
+font-size: 100%;
+font-weight: 500;
+color: gray;
+}
+
+#p2, #p4, #p6{
+font-size: 68%;
+color: #717175;
+}
+
+#p1 #p3 #p5{
+font-size: 68%;
+}
+
+#btnsearch{
+padding: 0;
+background-color: white;
+}
+
+#divsearch2{
+margin-top: -8px;
+}
+
+#b1, #b2, #b3{
+color: rgb(39, 153, 172);  
+}
+
+#cop{
+  color: rgb(39, 153, 172); 
+  font-size: 38%;
+   margin-left: -10px;
+}
+
+#porc1{
+color: rgb(25,148,168);
+}
+
+#porc2{
+color: rgb(25,148,168);
+}
+
+.Negociohh{
+	color: rgb(25,148,168);margin-top: -28px;padding-left: 87%;
+}
+
+#notrans{
+border-right: 1px solid rgb(181, 181, 181);
+}
+
+#noval{
+border-right: 1px solid rgb(181, 181, 181);
+
+}
+
+
+#fechatextini,#fechatextfin,#selectestado{
+border-color: #B5B5B5;
+color: #B5B5B5;
+background-color: white;
+height: 29px;
+border-radius: 10px;
+margin-top: -3%;
+min-height: 10px;
+padding-left: 75px;
+}
+
+#selectestado{
+	padding-bottom: 3%;
+}
+
+#notrans,#noval,#cli{
+	text-align: center;
+}
+
+.searchh{
+border-right: 0;	
+border-radius: 0;
+border-color: #B5B5B5;
+color: #B5B5B5;
+background-color: white;
+height: 29px;
+border-radius: 10px;
+
+    margin-bottom: -8px;
+margin-bottom: 2%;
+
+min-height: 10px;
+}
+
+.input-group-addon{
+	background-color: white;
+	border-left: 0;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th{
+background-color: rgb(243, 242, 242);	
+}
+
+.table > thead > tr > th{
+border-bottom: 2px solid #DBE4ED;	
+}
+
+#tbodyid th, #tbodyid td{
+	border-right: 1px solid #DBE4ED;
+	color: #717175;
+	text-align: center;
+} 
+
+#theadid{
+background-color: #f5f6fa;
+}
+
+#theadid th, #theadid td{
+	border-right: 1px solid #DBE4ED;
+	text-align: center;
+} 
+
+#form{
+	width: 100%;
+
+margin-top: -2%;
+}
+
+.select:after{
+	margin-right: 1px;
+}
+
+#divsearch{
+	margin-top: 4px;
+}
+
+#estadotitle{
+	color: gray;
+}
+

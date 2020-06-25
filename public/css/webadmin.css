@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+legend {
+
+width: 102%;
+font-size: 18px;
+padding-top: 0%;
+font-weight: 100;
+border-bottom: 1px solid rgb(25,148,168);
+
+}
+
+#cuerpo {
+
+    padding-top: 6%;
+    background-color: white;
+    /* margin-top: -3%; */
+    padding-left: 3%;
+/*    min-height: -webkit-fill-available;*/
+    min-height: 100vh;
+
+}
+
+#formulariolabel {
+
+width: 21%;
+color: rgb(171, 170, 176);
+font-size: 15px;
+padding-top: 0%;
+font-weight: 100;
+text-align: left;
+
+}
+
+.form-horizontal{
+	margin: 0;
+}
+
+
+#formularioinput {
+margin-bottom: 2%;
+height: 23px;
+border-radius: 8px;
+min-height: 100%;
+width: 36%;
+margin-left: -7%;
+padding-left: 18px;
+}
+
+#files {
+margin-bottom: 2%;
+height: 23px;
+border-radius: 8px;
+min-height: 100%;
+width: 36%;  
+  display: unset;
+  margin-left: -7%;
+}
+
+.control-group.image{
+  display: contents;
+}
+
+#legenddown {
+  color: rgb(25,148,168); 
+  margin-top: -13px;
+}
+
+.controls {
+    padding-left: 18%;
+    padding-top: 4%;
+
+}
+
+.control-group .controls button {
+    border-radius: 0;
+    border: none;
+    color: white;
+    border-radius: 0;
+    background-color: rgb(25,148,168);
+    padding: 8px 3% 8px;
+    margin-bottom: 5%;
+}
+
+/*#btnderecho {
+margin-right: 5%;  
+}
+  */
+
+  .control-group.btns{
+    margin-right: 390px;
+    margin-top: -11px;
+  }

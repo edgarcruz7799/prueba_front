@@ -1,0 +1,51 @@
+.mu-hero-section1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2vw 33.6vh;
+    background-color: #f1f0f0;
+}
+.barra_arriba {
+    width: 11%;
+    height: .5vw;
+    background: #f71e14;
+    border-radius: 20px;
+    margin: 0;
+}
+.text .title {
+    color: #dc0a00;
+    font-size: 2vw;
+    font-weight: 600;
+    margin: 1vw 0 3vw;
+}
+.text .parrafo {
+    color: #211915;
+    font-size: 1.3vw;
+    font-weight: 100;
+    margin: 0;
+    text-align: center;
+}
+.text a {
+    color: #428bca;
+    text-decoration: none;
+}
+.text a:focus {
+    color: #428bca;
+    font-weight: bold;
+    font-size: 1.1vw;
+}
+@media(max-width:767px){
+    .barra_arriba {
+        width: 20%;
+        height: 1vw;
+    }
+    .text .title {
+        font-size: 4vw;
+        margin: 2vw 0;
+    }
+    .text .parrafo {
+        font-size: 4.1vw;
+        margin: 6vw 6vw 0;
+    }
+}

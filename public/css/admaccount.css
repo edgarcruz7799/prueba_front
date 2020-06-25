@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.legendd{
+width: 100%;
+color: black;
+font-size: 18px;
+padding-top: 0%;
+font-weight: 100;
+border-bottom: 1px solid rgb(15, 147, 165);	
+}
+
+.legend{
+width: 100%;
+color: black;
+font-size: 18px;
+padding-top: 0%;
+font-weight: 500;
+border-bottom: 1px solid rgba(15, 147, 165, 0.5);
+}
+
+.contenido{
+background-color: white;
+padding-left: 3%;
+padding-top: 6%;
+}
+
+.data{
+color: rgb(173, 172, 179);
+margin-bottom: 2%;
+height: 23px;
+border-radius: 8px;
+min-height: 100%;
+width: 36%;
+margin-left: -8%;
+padding-left: 18px;
+}
+
+.secondtitle{
+color: rgb(15, 147, 165);
+margin-top: -28px;
+text-align: right;	
+}
+
+.control-group{
+text-align: center;	
+}
+
+.controls{
+padding-top: 3%;	
+}
+
+.btn{
+    border: none;
+    color: white;
+    border-radius: 0;
+    background-color: rgb(15, 147, 165);
+    padding: 7px 4% 7px;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.title{
+font-weight: 600; 	
+}
+
+.form{
+padding-left: 0%	
+}
+
+.divform{
+    margin-left: -14px;
+}

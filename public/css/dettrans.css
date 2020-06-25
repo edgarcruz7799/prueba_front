@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#contenido{
+    padding-top: 9%;
+    background-color: white;
+    margin-top: -4%;
+    padding-left: 1%;
+
+}  
+
+#retval{
+padding-left: 0%;
+color: rgb(118, 118, 123); 
+font-size: 90%; 
+width: 100%;
+
+}
+
+#datretiro{
+font-size: 87%;  
+}
+
+#divleg{
+padding-top: 3%;
+}
+
+.legendd{
+width: 100%;
+font-size: 18px;
+padding-top: 0%;
+font-weight: 100;
+border-bottom: 1px solid rgb(25,148,168); 
+color: #4d4d4d;
+}
+
+#datosretiro{
+color: black;
+font-weight: bold;
+margin-top: -12px;
+margin-left: 4px;
+}
+
+#hr{
+height: 1px;
+background: #b4adad;
+}
+
+#estadomarc, #valormarc{
+border-radius: 32px;
+color: rgb(25, 148, 168);
+font-size: 17px;
+padding: 0% 2% 0% 2%;
+}
+
+#descriptiondiv{
+background-color: white;
+padding: 20px;
+color: black;
+overflow: scroll;
+height: 105px;
+width: 500px;
+border: 1px solid #4541414a;
+background-color: rgb(242, 242, 242);
+padding: 0;
+margin-top: -17px;
+margin-bottom: 2%;
+border-radius: 11px;
+
+
+}
+
+#descriptiondiv table tr td{
+padding: 12px;
+padding-left: 38px;
+padding-right: 40px;
+
+}
+
+#descriptiondiv table tr {
+	padding: 13px;
+	background-color: white;
+}
+
+.roww {
+	padding-top: 3%;
+}
+
+.back{
+	background-color: white;
+}
+
+.first {
+/*border-bottom: 1px solid rgb(206, 206, 206);
+padding-bottom: 2%;
+*/
+}
+
+.headhed{
+   background-color: white	;
+}
+
+.sup{
+    padding-left: 2%;
+    margin-left: 0;
+}
+
+.mapadiv{
+padding-left: 2%;
+border: 1px solid rgb(215, 229, 247);
+background-color: white;  	
+padding-top: 1%;
+margin: 2%;
+}
+
+#mapdivv{
+	margin-right: 3%; 
+	border: 1px solid rgb(215, 229, 247);
+	margin-left: -1%
+}
+
+.valors{
+font-size: 100%;
+color: rgb(121, 120, 126);
+font-weight: bold;
+margin-bottom: 5%;	
+font-size: 14px;
+}
+
+.legendd .neg{
+color: rgb(25,148,168);margin-top: -28px;padding-left: 87%;
+}
+
+.valorss{
+font-size: 100%;
+color: rgb(121, 120, 126);
+font-weight: bold;
+margin-bottom: 0%;	
+font-size: 14px;	
+}
+
+
+.alignpf{
+/*	margin-left: 3%;*/	
+}
+
+.alignep{
+/*	margin-left: 12%;*/	
+}
+
+/*#contenido .alignnrr{
+	margin-left: -15%;	
+}*/
+
+.margtitle{
+	margin-bottom: 3%;
+	font-size: 16px;
+}
+
+.estado{
+	font-size: 93%;
+    margin-top: 1%;
+}
+
+/*.fontpag{
+	font-size: 20px;
+	margin-left: 3%;
+}*/
+
+.titlemap{
+font-size: 96%;
+margin-left: -1%;
+font-weight: bold;
+
+}
+
+.hrstyle{
+width: 95%;
+border-top: 1px solid rgb(206, 206, 206);
+margin-top: 0;
+margin-bottom: 0;
+
+}
+
+.valtot{
+font-size: 18px;
+
+}
+
+#descriptiondiv table tr .detproduct{
+  background-color: rgb(242,242,242);
+}
+
+
+#descriptiondiv table tr .imgg{
+  background-color: white;
+  border: 13px solid rgb(242,242,242);
+}
+
+.margg{
+	margin-top: -1%;
+}
+
+.dermarg{
+	margin-left: -8%;
+	margin-top: -4px;
+}
+
+.dermargg{
+	margin-left: -30%;
+}
+
+.row.roww.sup{
+	margin-top: -19px;
+}
+
+.row.roww.back.first.sup{
+	margin-left: -10px;
+}
+
+.row.roww.back.sup{
+	margin-left: -10px;	
+}
+
+div.row.roww.margmax{
+	margin-bottom: -12px;
+}
+
+div.dermarg.vbba{
+margin-top: 1px;
+margin-left: -51px;	
+}
+
+.dermargg.statusdemarg{
+	margin-top: -4px;
+}
+
+a:hover{
+	color: rgb(121, 120, 126);
+}
