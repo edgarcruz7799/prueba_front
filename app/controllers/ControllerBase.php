@@ -30,8 +30,9 @@ class ControllerBase extends Controller
         $this->tag->prependTitle('PARKING ');
         $this->view->setTemplateAfter('main');
         $this->getTranslation();
-        
-
+        $auth = $this->session->get('auth');
+        $this->view->auth = $auth;
+        // echo print_r($auth);die; 
         if(!isset($_SESSION["CSRF"])){
             $token = bin2hex(openssl_random_pseudo_bytes(16));
             $_SESSION["CSRF"] = $token;

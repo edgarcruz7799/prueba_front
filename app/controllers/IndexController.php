@@ -39,41 +39,19 @@ class IndexController extends ControllerBase
 
     public function indexAction()
     {   
-                    
-        //print_r($this->session->get("access_type"));die;
-            $url = $this->serverapi."/cellar/listSelect";
+            $url = 'https://apiprueba.gopass.com.co/establishment/getAllEstablishmenthttps://apiprueba.gopass.com.co/establishment/getAllEstablishment/';
             $base = new ControllerBase();
-
-            $response = $base->sendRedirect($url, $data);
-            $response = json_decode($response);
-//print_r($response);die;
+            
+            $data = array();
+            // $response = $base->sendRedirect($url);
+            $response = file_get_contents($url);
+            // print_r($url);die;
+//             $response = json_decode($response);
+// print_r($response);die;
             if(isset($response->return) && $response->return) { 
-            $this->view->dat = $response->data;
-            $this->view->data = $response->departament;
-            $this->view->dato = $response->city;
-
-        }
-        
-        if ($this->session->get("auth") != null){
-            if ($this->session->get("access_type") == 1) {
-                //print_r($this->session->get("access_type"));die;
-                return $this->response->redirect("client/indexClient");
-            } if ($this->session->get("access_type") == 3) {
-                //print_r($this->session->get("access_type"));die;
-                $this->session->set("access_type", 1);
-                return $this->response->redirect("quotation/billingTruck");
-            } else {
-                //print_r($this->session->get("access_type"));die;
-                $this->session->set("access_type", 1);
-                return $this->response->redirect("quotation/billingCellar");
-            }
-        }else{
-            if ($this->session->get("access_type") == 2 || $this->session->get("access_type") == 3) {
-                $this->session->set("access_type", 0);
-            }
-        }
+            $this->view->data = $response;
+             }        
     }
-
     public function auctionAction()
     {
     }

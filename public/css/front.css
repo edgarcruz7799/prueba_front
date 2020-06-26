@@ -16,10 +16,11 @@
     font-family: 'GothamRounded-Book';
     src: url('../fonts/GothamRounded-Book.otf');
 }
-body,p{
+html,body,p{
     margin: 0;
     font-family: 'GothamRounded-Light';
     font-size: 1vw;
+    overflow-x: hidden;
 }
 header.header {
     display: grid;
@@ -31,8 +32,23 @@ header.header {
     grid-gap: 2vw;
     box-shadow: 0 0 10px #00000040;
 }
+header.header.log {
+    grid-template-columns: 7vw 1fr 1fr 7vw 4vw 3vw;
+}
 img.logo_parking {
     width: 3.2vw;
+}
+.a_header_log>img {
+    width: 100%;
+}
+a.logout.a_header_log>img {
+    width: 5vw;
+}
+.a_header_log {
+    width: 3.4vw;
+    height: inherit;
+    display: flex;
+    align-items: center;
 }
 header.header>label {
     font-family: GothamRounded-Bold;
@@ -45,6 +61,14 @@ header.header>label {
     height: 4vw;
     background-position: center;
     background-size: 8vw;
+    cursor: pointer;
+}
+.container_login_registrate.logueado{
+    background-image: url(https://storage.googleapis.com/datia-files/hom/assets/logueado.png);
+    background-size: 100%;
+}
+.container_login_registrate.sin_log{
+    background-image: url(https://storage.googleapis.com/datia-files/hom/assets/login.jpg);
 }
 section.radicar_pqrs {
     height: 36vw;
@@ -61,6 +85,7 @@ section.radicar_pqrs .linea_azul {
     border-radius: .5vw;
     margin-top: 3vw;
 }
+
 section.radicar_pqrs>p {
     font-size: 2vw;
     font-family: 'GothamRounded-Book';
@@ -68,7 +93,7 @@ section.radicar_pqrs>p {
     color: #fff;
     margin: 2vw 0;
 }
-section.radicar_pqrs>button {
+section.radicar_pqrs>button,.carrusel_principal>div>.swiper-slide>button {
     font-family: 'GothamRounded-Medium';
     padding: 1vw 2vw;
     font-size: 1vw;
@@ -79,7 +104,7 @@ section.radicar_pqrs>button {
     cursor: pointer;
     transition: .3s;
 }
-section.radicar_pqrs>button:hover{
+section.radicar_pqrs>button:hover,.carrusel_principal>div>.swiper-slide>button:hover{
     transform: scale(1.03);
     border-radius: .8vw;
 } 
@@ -108,4 +133,189 @@ section.pie_pagina>div>p {
 }
 section.pie_pagina>div>p.title {
     font-size: 1.2vw;
+}
+.carrusel_principal>div>.swiper-slide {
+    height: 40vw;
+    background-size: 100%;
+    background-position: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    box-shadow: inset 0px 7px 9px 0px #00000052;
+}
+.carrusel_principal>div>.swiper-slide>p {
+    font-family: 'GothamRounded-Medium';
+    font-size: 2vw;
+    color: #3e3e3e;
+    width: 55%;
+    text-shadow: 0 0 7px #ffffff9e;
+    background-image: linear-gradient(45deg, #ffffff7a, transparent);
+    padding: 3vw 4vw;
+    margin-bottom: 1vw;
+}
+.carrusel_principal>div>.swiper-slide>p>span {
+    font-size: 1.4vw;
+}
+.carrusel_principal>div>.swiper-slide>button {
+    margin-left: 3vw;
+}
+.background-header-principal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 11;
+    background-color: #000000d9;
+    display: none;
+}
+.header_register_login {
+    width: 40vw;
+    background-color: #fff;
+    border-radius: 1vw 0 1vw 0;
+    box-shadow: 0 0 9px black;
+    position: relative;
+}
+.header_register_login>.main {
+    display: flex;
+}
+.header_register_login>.main>div {
+    width: 50%;
+    text-align: center;
+    border: 1px solid #c5c5c5;
+    font-family: 'GothamRounded-Medium';
+    padding: 1vw 0;
+    cursor: pointer;
+}
+.header_register_login>.main>div:first-child{
+    border-radius: 1vw 0 0vw 0;
+    border-right: none;
+}
+.header_register_login>.main>div.active{
+    background-color: #51abfa;
+    color: #fff;
+}
+.container_register,.container_nuevo_caso {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 12;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.content_registrate>form, .content_login>form {
+    display: grid;
+    padding: 1vw 1.5vw;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1vw;
+}
+.content_registrate>form>div, .content_login>form>div {
+    display: flex;
+    flex-direction: column;
+}
+.content_registrate>form>div>label, .content_login>form>div>label {
+    font-size: .8vw;
+    margin-bottom: .4vw;
+}
+.content_registrate>form>div>input,.content_registrate>form>div>select, .content_login>form>div>input {
+    padding: .5vw;
+    border-radius: .5vw;
+    border: 1px solid #80808078;
+    background-color: rgb(255, 255, 255);
+}
+.content_registrate>form>div>input::placeholder, .content_login>form>div>input::placeholder {
+    color: #80808078;
+}
+input.btn_registrar,input.btn_login {
+    font-family: 'GothamRounded-Medium';
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    border-radius: .6vw;
+    border: none;
+    color: #fff;
+    background: #4CAF50;
+    cursor: pointer;
+    transition: .3s;
+    grid-area: auto/1/auto/3;
+}
+.header_register_login>.cierre,.content_nuevo_caso>div.cierre {
+    background-color: #51abfa;
+    color: #fff;
+    width: 2vw;
+    height: 2vw;
+    font-size: 1.6vw;
+    font-family: 'GothamRounded-Medium';
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -.7vw;
+    top: -.7vw;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 0 6px black;
+    padding: 0;
+}
+.content_nuevo_caso>div.cierre{
+    position: fixed;
+    right: 46.3vw;
+    top: 3.3vw;
+}
+.header_register_login>.cierre:hover,.content_nuevo_caso>div.cierre:hover{
+    background-color: #ff0000;
+    color: #fff;
+}
+.content_nuevo_caso {
+    background: #fff;
+    border-radius: 1vw;
+    position: relative
+}
+.content_nuevo_caso>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw;
+}
+.content_nuevo_caso>div>input {
+    border-radius: .2vw;
+    border: 1px solid #bdbdbd;
+    margin-left: .5vw;
+    height: 1.5vw;
+}
+.content_nuevo_caso>div.add_question {
+    position: fixed;
+    left: 47vw;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #4CAF50;
+    font-size: 2vw;
+    font-family: 'GothamRounded-Medium';
+    width: 0.3vw;
+    height: 0.3vw;
+    display: flex;
+    top: 3.2vw;
+    justify-content: center;
+    cursor: pointer;
+}
+.content_nuevo_caso {
+    background: #fff;
+    border-radius: 1vw;
+    position: relative;
+    padding: 3.3vw 2vw;
+    width: 30vw;
+}
+.content_pregunta>textarea {
+    width: 21vw;
+    border-radius: .3vw;
+    max-height: 43vh;
+    min-width: 21vw;
+    max-width: 21vw;
+}
+.content_nuevo_caso>div.title_caso {
+    flex-direction: column;
 }
