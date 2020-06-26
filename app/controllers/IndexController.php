@@ -39,18 +39,18 @@ class IndexController extends ControllerBase
 
     public function indexAction()
     {   
-            $url = 'https://apiprueba.gopass.com.co/establishment/getAllEstablishmenthttps://apiprueba.gopass.com.co/establishment/getAllEstablishment/';
+            $url = $this->serverapi2.'establishment/getAllEstablishment';
             $base = new ControllerBase();
             
             $data = array();
-            // $response = $base->sendRedirect($url);
-            $response = file_get_contents($url);
-            // print_r($url);die;
+            $response = $base->sendRedirect($url,$data);
+            // $response = file_get_contents($url);
+            // echo print_r($url);die;
 //             $response = json_decode($response);
-// print_r($response);die;
+            // echo print_r($response);die;
             if(isset($response->return) && $response->return) { 
-            $this->view->data = $response;
-             }        
+                $this->view->dataintegration = $response;
+            }        
     }
     public function auctionAction()
     {

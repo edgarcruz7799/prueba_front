@@ -25,6 +25,7 @@ class ControllerBase extends Controller
     {
 
     	$this->serverapi = $this->config->application->baseUriApi;
+    	$this->serverapi2 = $this->config->application->baseUriApi2;
         //$this->serverapi = "http://api.devel.logisticappweb.com";
         $this->recipient = "daniel.cardenas@logisticapp.org";
         $this->tag->prependTitle('PARKING ');
