@@ -463,7 +463,10 @@ input.btn_registrar,input.btn_login {
         grid-gap: 1.2vw;
     }
     .fa-user:before, .fa-map-marker:before, .fa-car:before, .fa-motorcycle:before, .fa-clock-o:before, .fa-ticket:before {
-        font-size: 2vw;
+        font-size: 3vw;
+    }
+    .container_items>.item>div>p {
+        font-size: 3.1vw;
     }
     .container_items>.item>div>p>span {
         font-family: 'GothamRounded-Light';
