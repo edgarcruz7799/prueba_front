@@ -46,9 +46,9 @@ class IndexController extends ControllerBase
             $response = $base->sendRedirect($url,$data);
             // $response = file_get_contents($url);
             // echo print_r($url);die;
-//             $response = json_decode($response);
+            $response = json_decode($response);
             // echo print_r($response);die;
-            if(isset($response->return) && $response->return) { 
+            if($response->return) { 
                 $this->view->dataintegration = $response;
             }        
     }

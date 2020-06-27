@@ -241,12 +241,11 @@
 .swiper-container-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    bottom: 7vw;
+    bottom: 2vw;
     left: 0;
     width: auto;
     background: #ffffff00;
     left: 44%;
-    opacity: 0.77;
     height: auto;
     display: flex;
     align-items: center;
